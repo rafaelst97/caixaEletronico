@@ -44,12 +44,11 @@ function toWithdraw (value){
     bankNotes.textContent = bankNote1;
 }
 
-//Início do programa coletando o valor digitado após o clique no botão
+//Início do programa coletando o valor digitado após o clique no botão Enter 
 var enter = document.querySelector("#enter");
 enter.addEventListener("click", function (event){
     event.preventDefault();
 
     var form = document.querySelector("#inputForm");
     toWithdraw(form.input.value);
-
 })
