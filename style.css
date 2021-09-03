@@ -1,0 +1,40 @@
+#title{
+    text-align: center;
+    font-weight: bold;
+}
+
+button{
+    font-size: 22pt;
+}
+
+#inputValue{
+    position: absolute;
+    top: 30%;
+    right: 39%;
+}
+
+table{
+	width: 100%;
+	margin-bottom : 8px;
+    table-layout: fixed;
+}
+
+td, th {
+	padding: 11px;
+	margin: 0;
+	border: 1px solid #CCCCCC;
+	text-align: center;
+    font-weight: bold;
+    font-size: 22pt;
+}
+
+th{
+    width: 16pt;
+	font-weight: bold;
+	background-color: #EEEEEE;
+    font-size: 22pt;
+}
+
+input{
+    font-size: 22pt;
+}

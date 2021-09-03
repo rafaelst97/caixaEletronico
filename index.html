@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Caixa Eletrônico</title>
+        <link rel="icon" href="sifrao.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <header>
+			<h1 id = "title">ATM</h1>
+        </header>
+
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nota de $1</th>
+                        <th>Nota de $5</th>
+                        <th>Nota de $10</th>
+                        <th>Nota de $50</th>
+                        <th>Nota de $100</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class = "bankNotes" id = "bankNotes">
+                        <td class ="bankNotes1">0</td>
+                        <td class ="bankNotes5">0</td>
+                        <td class ="bankNotes10">0</td>
+                        <td class ="bankNotes50">0</td>
+                        <td class ="bankNotes100">0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div id="inputValue">
+                <form id="inputForm">   
+                    <input id= "input" name = "input" type="text" placeholder="Digite o valor a ser sacado">
+                    <br>
+                    <button id="enter" class="confirmationButton">Enter</button>
+                </form>
+            </div>
+        </main>
+    </body>
+
+    <script src = "index.js"></script>
+
+</html>
