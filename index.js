@@ -13,6 +13,7 @@ function counter(value, bankNote){
     return counter;
 }
 
+
 //Função de saque
 function toWithdraw (value){
     
@@ -26,9 +27,11 @@ function toWithdraw (value){
         bankNotesCounted[i] = counter (value, bankNotes[i]);
         value = value - (bankNotesCounted[i] * bankNotes[i]);
     }
-
+    
     let valueOfBankNotes = document.querySelector("#valueOfBankNotes"); //Cabeça da tabela
     let numberOfBankNotes = document.querySelector("#numberOfBankNotes"); //Corpo da tabela
+    valueOfBankNotes.lastChild.remove();
+    numberOfBankNotes.lastChild.remove();
     let valueTr = document.createElement("tr"); // Criação da linha responsável por ficar os tipos de cédulas
     let countedTr = document.createElement("tr"); // Criação da linha responsável pelo contador de cada cédula
     
@@ -42,13 +45,13 @@ function toWithdraw (value){
         countedTr.appendChild(countedTd)
         valueOfBankNotes.appendChild(valueTr);
         numberOfBankNotes.appendChild(countedTr);
-    }
-    enter.remove("#enter");
 
+    }
 }
 
 //Início do programa coletando o valor digitado após o clique no botão Enter 
 var enter = document.querySelector("#enter");
+var table = document.querySelector("table");
 enter.addEventListener("click", function (event){
     event.preventDefault();
     var form = document.querySelector("#inputForm");
