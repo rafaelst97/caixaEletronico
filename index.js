@@ -17,7 +17,7 @@ function counter(value, bankNote){
 //Função de saque
 function toWithdraw (value){
     
-    let bankNotes = [100, 50, 30, 20, 10, 5, 2, 1];
+    let bankNotes = [100, 50, 20, 10, 5, 2, 1];
     let bankNotesCounted = [];
     for (let i = 0; i < bankNotesCounted.length; i++){
         bankNotesCounted.push(0);
@@ -51,7 +51,6 @@ function toWithdraw (value){
 
 //Início do programa coletando o valor digitado após o clique no botão Enter 
 var enter = document.querySelector("#enter");
-var table = document.querySelector("table");
 enter.addEventListener("click", function (event){
     event.preventDefault();
     var form = document.querySelector("#inputForm");
