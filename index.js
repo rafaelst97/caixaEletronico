@@ -47,7 +47,6 @@ function toWithdraw (value){
         countedTr.appendChild(countedTd)
         valueOfBankNotes.appendChild(valueTr);
         numberOfBankNotes.appendChild(countedTr);
-
     }
 }
 
